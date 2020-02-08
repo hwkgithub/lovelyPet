@@ -1,0 +1,343 @@
+/*
+* @Author: Marte
+* @Date:   2019-06-01 11:26:26
+* @Last Modified by:   Marte
+* @Last Modified time: 2019-06-04 23:45:35
+*/
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body {
+    width: 100%;
+    height: 100%;
+}
+
+li {
+    list-style: none;
+}
+
+
+
+/* 导航栏 */
+.head {
+    height: 85px;
+}
+
+.inner {
+    width: 1200px;
+    height: 85px;
+    margin: 0 auto;
+    line-height: 85px;
+}
+
+.inner .logo {
+    float: left;
+    margin-top: 10px;
+    margin-left: 5px;
+}
+
+.inner .title {
+    float: left;
+    margin-top: 8px;
+    margin-left: 20px;
+}
+
+.nav {
+    float: right;
+}
+
+.nav li  {
+    float: left;
+    margin: 0 20px;
+}
+.nav li a {
+    color: #92D050;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+.nav li a:hover {
+    color: #FF7F50;
+}
+
+
+/* banner栏 */
+.banner {
+    width: 100%;
+    height: 630px;
+    background-color: #E9EEF4;
+    padding: 50px;
+}
+
+.inner-banner {
+    width: 1100px;
+    height: 520px;
+    background-color: #fff;
+    margin: 0 auto ;
+    padding: 30px;
+}
+
+.inner-banner h3 {
+    font-size: 32px;
+    color: #555555;
+    margin-bottom: 20px;
+}
+
+.inner-banner p {
+    color: #777777;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+.banner-left {
+    width: 320px;
+    height: 440px;
+    float: left;
+    margin-left: 25px;
+}
+
+.banner-left p{
+    margin-top: 20px;
+}
+
+.banner-mid img {
+    margin: 10px 0 10px;
+}
+
+.banner-right p {
+    margin-bottom: 20px;
+}
+
+.banner-mid {
+    width: 320px;
+    height: 440px;
+    float: left;
+    margin-left: 25px;
+}
+
+.banner-right {
+    width: 320px;
+    height: 440px;
+    float: left;
+    margin-left: 25px;
+}
+
+/* container栏 */
+.container {
+    width: 100%;
+    height: 550px;
+    background-color: pink;
+    padding: 45px 0;
+    background: url(../images/co-bg3.jpg) no-repeat center;
+}
+
+.inner-con {
+    width: 1200px;
+    height: 500px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.inner-con .do {
+    color: #000;
+    font-size: 56px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: 400;
+    font-style: italic; /* 斜体 */
+    text-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2); /* 垂直阴影2px 阴影尺寸5px 再设置0.2的透明度 */
+}
+
+.inner-con h4 {
+    font-size: 30px;
+    color: #FFFFFF;
+    margin-bottom: 10px;
+    text-align: center;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.inner-con .p {
+    color: #FFFFFF;
+    font-size: 15px;
+    line-height: 30px;
+    letter-spacing: 1px;
+    width: 320px;
+    height: 200px;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.inner-con .more {
+    width: 100px;
+    height: 40px;
+    text-decoration: none;
+    border: 1px solid #ccc;
+    border-radius: 9px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 16px;
+    color: #000;
+    position: absolute;
+    bottom: 35px;
+    left: 50%;
+    margin-left: -50px;
+}
+
+.more:hover {
+    background-color: #9E0022;
+    color: #fff;
+}
+
+.inner-con .left {
+    width: 350px;
+    height: 380px;
+    position: absolute;
+    left: 10px;
+    padding: 10px;
+    background: rgba(255,168,29, 0.4);
+    -webkit-transition: all 0.25s ease 0s; //默认值就为ease 鼠标放上去动画开始的时间
+    -moz-transition: all 0.25s ease 0s;
+    -ms-transition: all 0.25s ease 0s;
+    -o-transition: all 0.25s ease 0s;
+    transition: all 0.25s ease 0s;
+}
+
+.inner-con .left:hover {
+    box-shadow: 0 0 8px 6px rgba(0,0,0,0.4);
+    margin-top: -10px;
+}
+
+
+.inner-con .mid {
+    width: 350px;
+    height: 380px;
+    background-color: pink;
+    position: absolute;
+    padding: 10px;
+    left: 50%;
+    margin-left: -175px;
+    background: rgba(255,168,29, 0.4);
+    -webkit-transition: all 0.25s ease 0s; //默认值就为ease 鼠标放上去动画开始的时间
+    -moz-transition: all 0.25s ease 0s;
+    -ms-transition: all 0.25s ease 0s;
+    -o-transition: all 0.25s ease 0s;
+    transition: all 0.25s ease 0s;
+}
+
+.inner-con .mid:hover {
+    box-shadow: 0 0 8px 6px rgba(0,0,0,0.4);
+    margin-top: -10px;
+}
+
+.inner-con .right {
+    width: 350px;
+    height: 380px;
+    background-color: pink;
+    position: absolute;
+    right: 10px;
+    padding: 10px;
+    background: rgba(255,168,29, 0.4);
+    -webkit-transition: all 0.25s ease 0s; //默认值就为ease 鼠标放上去动画开始的时间
+    -moz-transition: all 0.25s ease 0s;
+    -ms-transition: all 0.25s ease 0s;
+    -o-transition: all 0.25s ease 0s;
+    transition: all 0.25s ease 0s;
+}
+
+.inner-con .right:hover {
+    box-shadow: 0 0 8px 6px rgba(0,0,0,0.4);
+    margin-top: -10px;
+}
+
+/* footer栏 */
+.footer {
+    width: 100%;
+    height: 300px;
+    margin-top: 40px;
+    background-color: #F0F3EF;
+}
+.footer-hd {
+    width: 100%;
+    height: 180px;
+    border-bottom: 1px solid #dedede;
+    position: relative;
+}
+
+.guide-left {
+    width: 200px;
+    height: 150px;
+    position: absolute;
+    top: 25px;
+    left: 100px;
+}
+
+.guide-mid {
+    width: 200px;
+    height: 150px;
+    position: absolute;
+    top: 25px;
+    left: 450px;
+}
+
+.guide-right{
+    width: 200px;
+    height: 150px;
+    position: absolute;
+    top: 25px;
+    left: 800px;
+}
+
+.footer-hd dt {
+    font-weight: 700;
+    font-size: 18px;
+    color: #6E6E6E;
+    margin-bottom: 10px;
+}
+
+.footer-hd a {
+    margin-top: 10px;
+    text-decoration: none;
+    display: block;
+    height: 12px;
+    color: #959695;
+    font-size: 14px;
+}
+
+.footer-hd a:hover {
+   color: #FF7F50;
+}
+
+.footer-bd {
+    width: 100%;
+    height: 100px;
+}
+
+.footer-bd .first {
+    width: 1100px;
+    color: #999;
+    font-size: 14px;
+    margin: 15px auto 0;
+    letter-spacing: 0.5px;
+}
+
+.footer-bd .second {
+    width: 636px;
+    color: #999;
+    font-size: 14px;
+    margin: 5px auto 0;
+    letter-spacing: 0.5px;
+}
+
+.footer-bd a {
+    text-decoration: none;
+    font-size: 14px;
+    color: #999;
+}
+
+.footer-bd a:hover {
+    color: #FF7F50;
+}

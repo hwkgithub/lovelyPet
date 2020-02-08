@@ -1,0 +1,549 @@
+/*
+* @Author: Marte
+* @Date:   2019-05-28 18:28:20
+* @Last Modified by:   Marte
+* @Last Modified time: 2019-06-05 23:23:51
+*/
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+}
+
+li {
+    list-style: none;
+}
+
+
+/* 导航栏 */
+.head {
+    height: 85px;
+}
+
+.inner {
+    width: 1200px;
+    height: 85px;
+    margin: 0 auto;
+    line-height: 85px;
+}
+
+.inner .logo {
+    float: left;
+    margin-top: 10px;
+    margin-left: 5px;
+}
+
+.inner .title {
+    float: left;
+    margin-top: 8px;
+    margin-left: 20px;
+}
+
+.nav {
+    float: right;
+}
+
+.nav li  {
+    float: left;
+    margin: 0 20px;
+}
+.nav li a {
+    color: #92D050;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+.nav li a:hover {
+    color: #FF7F50;
+}
+
+
+
+/* banner栏 */
+.banner {
+    width: 100%;
+    height: 600px;
+    background: url(../images/banner1.jpg) no-repeat center;
+}
+
+/* container栏 */
+.container {
+    width: 100%;
+    height: 500px;
+    margin: 50px 0;
+}
+
+.inner-con {
+    width: 1140px;
+    height: 500px;
+    margin: 0 auto;
+}
+
+.welcome {
+    color: #000;
+    font-size: 56px;
+    margin-bottom: 15px;
+    text-align: center;
+    font-weight: 400;
+    font-style: italic; /* 斜体 */
+    text-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2); /* 垂直阴影2px 阴影尺寸5px 再设置0.2的透明度 */
+}
+
+.inner-con img {
+    width: 540px;
+    height: 400px;
+    float: left;
+}
+
+.clearfix:after {
+        content: "";
+        display: block;
+        height: 0;
+        clear: both;
+        visibility: hidden;
+}
+
+.clearfix {
+        *zoom: 1;
+}
+
+.advice {
+    width: 540px;
+    float: right;
+}
+
+.advice h3 {
+    font-size: 30px;
+    letter-spacing: 3px;
+    color: #FFA917;
+}
+
+.advice p {
+    color: #545151;
+    margin: 16px 0 25px;
+}
+
+.advice img {
+    width: 18px;
+    height: 18px;
+}
+
+.advice li {
+   width: 540px;
+   height: 50px;
+   color: #545151;
+}
+
+/* main栏 */
+.main {
+    width: 100%;
+    height: 700px;
+    background-color: #E9EEF4;
+}
+
+.inner-main {
+    width: 1180px;
+    height: 700px;
+    margin: 0 auto;
+}
+
+.decide {
+    color: #000;
+    font-size: 56px;
+    margin-bottom: 15px;
+    text-align: center;
+    font-weight: 400;
+    font-style: italic; /* 斜体 */
+    text-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2); /* 垂直阴影2px 阴影尺寸5px 再设置0.2的透明度 */
+}
+
+.suggestion {
+    color: #545151;
+    text-align: center;
+}
+
+/* left */
+.inner-main .left {
+    width: 380px;
+    height: 550px;
+    float: left;
+    margin: 6px;
+}
+
+.left-top {
+    width: 260px;
+    height: 260px;
+    border-radius: 50%;
+    position: relative;
+    left: 50%;
+    margin-left: -130px;
+}
+
+.left-top:hover  {
+    animation: myfirst 4s linear infinite alternate;
+    -moz-animation: myfirst 4s linear infinite alternate; /* Firefox */
+    -webkit-animation: myfirst 4s linear infinite alternate;  /* Safari 和 Chrome */
+    -o-animation: myfirst 4s linear infinite alternate;   /* Opera */
+    /* -webkit-animation-duration: 4s ; 完成动画时间
+     -webkit-animation-timing-function: linear; 播放方式匀速
+    -webkit-animation-iteration-count: infinite;  无限次数
+    -webkit-animation-direction: alternate; 轮流反向播放 */
+}
+@keyframes myfirst {
+    0%   {background: #23074d;}
+    25%  {background: #cc5333;}
+    50%  {background: #fffbd5;}
+    100% {background: #b20a2c;}
+}
+
+@-moz-keyframes myfirst /* Firefox */
+{
+    0%   {background: #23074d;}
+    25%  {background: #cc5333;}
+    50%  {background: #fffbd5;}
+    100% {background: #b20a2c;}
+}
+
+@-webkit-keyframes myfirst /* Safari 和 Chrome */
+{
+    0%   {background: #23074d;}
+    25%  {background: #cc5333;}
+    50%  {background: #fffbd5;}
+    100% {background: #b20a2c;}
+}
+
+@-o-keyframes myfirst /* Opera */
+{
+    0%   {background: #23074d;}
+    25%  {background: #cc5333;}
+    50%  {background: #fffbd5;}
+    100% {background: #b20a2c;}
+}
+
+
+.left-top .bg-one {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background: url(../images/b1.jpg) no-repeat center;
+    position: absolute;
+    top: 5px;
+    left: 50%;
+    margin-left: -125px;
+}
+
+.left-bottom {
+    width: 350px;
+    height: 175px;
+    margin: 40px auto;
+}
+
+.left-bottom h3 {
+    font-size: 30px;
+    color: #212121;
+    text-align: center;
+    font-weight: 600;
+    border-bottom: none;
+    font-family: 'Lato', sans-serif;
+    letter-spacing: 4px;
+}
+
+.left-bottom p {
+    padding: 30px;
+    margin: 16px auto 0;
+    border: 2px solid rgba(179, 177, 177, 0.2);
+    line-height: 32px;
+    color: #999;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+/* mid */
+.inner-main .mid {
+    width: 380px;
+    height: 550px;
+    float: left;
+    margin: 6px;
+}
+
+.mid-top {
+    width: 260px;
+    height: 260px;
+    border-radius: 50%;
+    position: relative;
+    left: 50%;
+    margin-left: -130px;
+}
+
+.mid-top:hover  {
+    animation: myfirst 4s linear infinite alternate;
+    -moz-animation: myfirst 4s linear infinite alternate; /* Firefox */
+    -webkit-animation: myfirst 4s linear infinite alternate;  /* Safari 和 Chrome */
+    -o-animation: myfirst 4s linear infinite alternate;   /* Opera */
+    /* -webkit-animation-duration: 4s ; 完成动画时间
+     -webkit-animation-timing-function: linear; 播放方式匀速
+    -webkit-animation-iteration-count: infinite;  无限次数
+    -webkit-animation-direction: alternate; 轮流反向播放 */
+}
+@keyframes myfirst {
+    0%   {background: #23074d;}
+    25%  {background: #cc5333;}
+    50%  {background: #fffbd5;}
+    100% {background: #b20a2c;}
+}
+
+@-moz-keyframes myfirst /* Firefox */
+{
+    0%   {background: #23074d;}
+    25%  {background: #cc5333;}
+    50%  {background: #fffbd5;}
+    100% {background: #b20a2c;}
+}
+
+@-webkit-keyframes myfirst /* Safari 和 Chrome */
+{
+    0%   {background: #23074d;}
+    25%  {background: #cc5333;}
+    50%  {background: #fffbd5;}
+    100% {background: #b20a2c;}
+}
+
+@-o-keyframes myfirst /* Opera */
+{
+    0%   {background: #23074d;}
+    25%  {background: #cc5333;}
+    50%  {background: #fffbd5;}
+    100% {background: #b20a2c;}
+}
+
+
+
+.mid-top .bg-two {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background: url(../images/b2.jpg) no-repeat center;
+    position: absolute;
+    top: 5px;
+    left: 50%;
+    margin-left: -125px;
+}
+
+.mid-bottom {
+    width: 350px;
+    height: 175px;
+    margin: 40px auto;
+}
+
+.mid-bottom h3 {
+    font-size: 30px;
+    color: #212121;
+    text-align: center;
+    font-weight: 600;
+    border-bottom: none;
+    font-family: 'Lato', sans-serif;
+    letter-spacing: 4px;
+}
+
+.mid-bottom p {
+    padding: 30px;
+    margin: 16px auto 0;
+    border: 2px solid rgba(179, 177, 177, 0.2);
+    line-height: 32px;
+    color: #999;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+/* right */
+.inner-main .right {
+    width: 380px;
+    height: 550px;
+    float: left;
+    margin: 6px;
+}
+
+.right-top {
+    width: 260px;
+    height: 260px;
+    border-radius: 50%;
+    position: relative;
+    left: 50%;
+    margin-left: -130px;
+}
+
+.right-top:hover  {
+    animation: myfirst 4s linear infinite alternate;
+    -moz-animation: myfirst 4s linear infinite alternate; /* Firefox */
+    -webkit-animation: myfirst 4s linear infinite alternate;  /* Safari 和 Chrome */
+    -o-animation: myfirst 4s linear infinite alternate;   /* Opera */
+    /* -webkit-animation-duration: 4s ; 完成动画时间
+     -webkit-animation-timing-function: linear; 播放方式匀速
+    -webkit-animation-iteration-count: infinite;  无限次数
+    -webkit-animation-direction: alternate; 轮流反向播放 */
+}
+@keyframes myfirst {
+    0%   {background: #23074d;}
+    25%  {background: #cc5333;}
+    50%  {background: #fffbd5;}
+    100% {background: #b20a2c;}
+}
+
+@-moz-keyframes myfirst /* Firefox */
+{
+    0%   {background: #23074d;}
+    25%  {background: #cc5333;}
+    50%  {background: #fffbd5;}
+    100% {background: #b20a2c;}
+}
+
+@-webkit-keyframes myfirst /* Safari 和 Chrome */
+{
+    0%   {background: #23074d;}
+    25%  {background: #cc5333;}
+    50%  {background: #fffbd5;}
+    100% {background: #b20a2c;}
+}
+
+@-o-keyframes myfirst /* Opera */
+{
+    0%   {background: #23074d;}
+    25%  {background: #cc5333;}
+    50%  {background: #fffbd5;}
+    100% {background: #b20a2c;}
+}
+
+
+.right-top .bg-three {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background: url(../images/b3.jpg) no-repeat center;
+    position: absolute;
+    top: 5px;
+    left: 50%;
+    margin-left: -125px;
+}
+
+.right-bottom {
+    width: 350px;
+    height: 175px;
+    margin: 40px auto;
+}
+
+.right-bottom h3 {
+    font-size: 30px;
+    color: #212121;
+    text-align: center;
+    font-weight: 600;
+    border-bottom: none;
+    font-family: 'Lato', sans-serif;
+    letter-spacing: 4px;
+}
+
+.right-bottom p {
+    padding: 30px;
+    margin: 16px auto 0;
+    border: 2px solid rgba(179, 177, 177, 0.2);
+    line-height: 32px;
+    color: #999;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+/* footer栏 */
+.footer {
+    width: 100%;
+    height: 300px;
+    margin-top: 40px;
+    background-color: #F0F3EF;
+}
+.footer-hd {
+    width: 100%;
+    height: 180px;
+    border-bottom: 1px solid #dedede;
+    position: relative;
+}
+
+.guide-left {
+    width: 200px;
+    height: 150px;
+    position: absolute;
+    top: 25px;
+    left: 100px;
+}
+
+.guide-mid {
+    width: 200px;
+    height: 150px;
+    position: absolute;
+    top: 25px;
+    left: 450px;
+}
+
+.guide-right{
+    width: 200px;
+    height: 150px;
+    position: absolute;
+    top: 25px;
+    left: 800px;
+}
+
+.footer-hd dt {
+    font-weight: 700;
+    font-size: 18px;
+    color: #6E6E6E;
+    margin-bottom: 10px;
+}
+
+.footer-hd a {
+    margin-top: 10px;
+    text-decoration: none;
+    display: block;
+    height: 12px;
+    color: #959695;
+    font-size: 14px;
+}
+
+.footer-hd a:hover {
+   color: #FF7F50;
+}
+
+.footer-bd {
+    width: 100%;
+    height: 100px;
+}
+
+.footer-bd .first {
+    width: 1100px;
+    color: #999;
+    font-size: 14px;
+    margin: 15px auto 0;
+    letter-spacing: 0.5px;
+}
+
+.footer-bd .second {
+    width: 636px;
+    color: #999;
+    font-size: 14px;
+    margin: 5px auto 0;
+    letter-spacing: 0.5px;
+}
+
+.footer-bd a {
+    text-decoration: none;
+    font-size: 14px;
+    color: #999;
+}
+
+.footer-bd a:hover {
+    color: #FF7F50;
+}

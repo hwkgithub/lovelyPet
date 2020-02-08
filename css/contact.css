@@ -1,0 +1,379 @@
+/*
+* @Author: Marte
+* @Date:   2019-06-03 18:22:04
+* @Last Modified by:   Marte
+* @Last Modified time: 2019-06-04 23:42:37
+*/
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body {
+    width: 100%;
+    height: 100%;
+}
+
+li {
+    list-style: none;
+}
+
+
+
+/* 导航栏 */
+.head {
+    height: 85px;
+}
+
+.inner {
+    width: 1200px;
+    height: 85px;
+    margin: 0 auto;
+    line-height: 85px;
+}
+
+.inner .logo {
+    float: left;
+    margin-top: 10px;
+    margin-left: 5px;
+}
+
+.inner .title {
+    float: left;
+    margin-top: 8px;
+    margin-left: 20px;
+}
+
+.nav {
+    float: right;
+}
+
+.nav li  {
+    float: left;
+    margin: 0 20px;
+}
+.nav li a {
+    color: #92D050;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+.nav li a:hover {
+    color: #FF7F50;
+}
+
+/*  banner栏  */
+.banner {
+    width: 100%;
+    height: 550px;
+    background: url(../images/banner5.jpg) no-repeat center;
+    position: relative;
+}
+
+.inner-banner {
+    width: 900px;
+    height: 400px;
+    position: absolute;
+    top: 65px;
+    left: 50%;
+    margin-left: -450px;
+}
+
+.inner-banner .title {
+    font-size: 60px;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 37px;
+    letter-spacing: 1px;
+    font-weight: 300;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.inner-banner .literature {
+    margin-top: 130px;
+    text-align: center;
+    font-size: 35px;
+    color: rgb(202, 201, 201);
+    letter-spacing: 1.5px;
+    padding: 0px 55px;
+    line-height: 50px;
+}
+
+/*  main栏  */
+.main {
+    width: 100%;
+    height: 720px;
+    margin-top: 50px;
+}
+
+.inner-main {
+    width: 1200px;
+    height: 700px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.inner-main h3 {
+    width: 300px;
+    color: #000;
+    font-size: 56px;
+    text-align: center;
+    font-weight: 400;
+    letter-spacing: 2px;
+    font-style: italic; /* 斜体 */
+    text-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2); /* 垂直阴影2px 阴影尺寸5px 再设置0.2的透明度 */
+    position: absolute;
+    top: 15px;
+    left: 50%;
+    margin-left: -150px;
+}
+
+.inner-main .left {
+    width: 300px;
+    height: 500px;
+    position: absolute;
+    top: 110px;
+    padding: 15px;
+}
+
+.inner-main .left img {
+    float: left;
+}
+
+.inner-main .left h4 {
+    font-size: 20px;
+    margin-left: 35px;
+    margin-top: 28px;
+}
+
+.inner-main .left p {
+    font-size: 16px;
+    margin-top: 12px;
+    color: #999;
+}
+
+.inner-main .wechat{
+    width: 60px;
+    height: 25px;
+    position: relative;
+    top: 18px;
+}
+
+.inner-main .qq {
+    width: 60px;
+    height: 25px;
+    position: relative;
+    top: 28px;
+}
+
+.wechat img {
+    position: absolute;
+    top: 9px;
+}
+.wechat p {
+    position: absolute;
+    left: 35px;
+}
+
+.qq img {
+    position: absolute;
+    top: 9px;
+}
+.qq p {
+    position: absolute;
+    left: 35px;
+}
+
+.inner-main .right {
+    width: 1000px;
+    height: 500px;
+    position: absolute;
+    top: 110px;
+    right: 0;
+    padding: 15px;
+}
+
+.one {
+    position: absolute;
+    top: 208px;
+    right: 80px;
+}
+
+.inner-main h2 {
+    letter-spacing: 1.5px;
+    margin-top: 10px;
+}
+
+.inner-main form {
+    margin-top: 10px;
+}
+
+.inner-main .right input {
+    width: 450px;
+    padding: 12px;
+    border: 1px solid #000;
+    margin: 15px 15px 15px 0;
+    font-size: 16px;
+    color: #000;
+    letter-spacing: 1px;
+    -webkit-transition: all 0.5s; //默认值就为ease 鼠标放上去动画开始的时间
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+input:hover {
+    background: rgba(197, 192, 185, 0.4);
+}
+
+.right select {
+    width: 450px;
+    padding: 12px;
+    border: 1px solid #000;
+    margin: 15px 15px 15px 0;
+    font-size: 16px;
+    color: #000;
+    letter-spacing: 1px;
+    -webkit-transition: all 0.5s; //默认值就为ease 鼠标放上去动画开始的时间
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+ select:hover {
+    background: rgba(197, 192, 185, 0.4);
+}
+
+.discuss {
+    width: 920px;
+    height: 150px;
+    margin-top: 15px;
+    border: 1px solid #000;
+    color: #757575;
+    font-size: 14px;
+    padding: 3px;
+    -webkit-transition: all 0.5s; //默认值就为ease 鼠标放上去动画开始的时间
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+.discuss:hover{
+    background: rgba(197, 192, 185, 0.4);
+}
+
+.inner-main .submit input{
+    width: 100px;
+    height: 50px;
+    background: #00b096;
+    border: none;
+    padding: 10px 30px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    -webkit-transition: all 0.5s; //默认值就为ease 鼠标放上去动画开始的时间
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+.submit input:hover {
+    width: 200px;
+    background-color: #96c93d;
+}
+
+/* footer栏 */
+.footer {
+    width: 100%;
+    height: 300px;
+    margin-top: 40px;
+    background-color: #F0F3EF;
+}
+.footer-hd {
+    width: 100%;
+    height: 180px;
+    border-bottom: 1px solid #dedede;
+    position: relative;
+}
+
+.guide-left {
+    width: 200px;
+    height: 150px;
+    position: absolute;
+    top: 25px;
+    left: 100px;
+}
+
+.guide-mid {
+    width: 200px;
+    height: 150px;
+    position: absolute;
+    top: 25px;
+    left: 450px;
+}
+
+.guide-right{
+    width: 200px;
+    height: 150px;
+    position: absolute;
+    top: 25px;
+    left: 800px;
+}
+
+.footer-hd dt {
+    font-weight: 700;
+    font-size: 18px;
+    color: #6E6E6E;
+    margin-bottom: 10px;
+}
+
+.footer-hd a {
+    margin-top: 10px;
+    text-decoration: none;
+    display: block;
+    height: 12px;
+    color: #959695;
+    font-size: 14px;
+}
+
+.footer-hd a:hover {
+   color: #FF7F50;
+}
+
+.footer-bd {
+    width: 100%;
+    height: 100px;
+}
+
+.footer-bd .first {
+    width: 1100px;
+    color: #999;
+    font-size: 14px;
+    margin: 15px auto 0;
+    letter-spacing: 0.5px;
+}
+
+.footer-bd .second {
+    width: 636px;
+    color: #999;
+    font-size: 14px;
+    margin: 5px auto 0;
+    letter-spacing: 0.5px;
+}
+
+.footer-bd a {
+    text-decoration: none;
+    font-size: 14px;
+    color: #999;
+}
+
+.footer-bd a:hover {
+    color: #FF7F50;
+}
